@@ -44,7 +44,8 @@ function App() {
   .then((response) => response.json())
   .then((data) => {
   
-    
+    const newUser = [...users, data];
+    setUsers(newUser)
     console.log(data);
   })
   
